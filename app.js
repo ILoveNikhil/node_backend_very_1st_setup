@@ -3,9 +3,9 @@ import { config } from 'dotenv'
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import cors from "cors";
-import userRouter from "./router/userRouters.js";
+// import userRouter from "./router/userRouters.js";
 // import bodyParser from "body-parser";
-import { errorMiddleware } from "./middlewares/errorMiddleware.js";
+// import { errorMiddleware } from "./middlewares/errorMiddleware.js";
 
 
 // app
@@ -23,7 +23,7 @@ app.use(fileUpload());
 app.use(cors());
 
 // Using Routes
-app.use("/api/v1/user", userRouter);
+// app.use("/api/v1/user", userRouter);
 
 // Middleware for Errors
-app.use(errorMiddleware);
+// app.use(errorMiddleware);
